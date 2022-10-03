@@ -1,0 +1,312 @@
+
+    /* BLOCO 1 */
+.bloco-1{
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+}
+
+.bloco-1 .faixa, .bloco-2 .faixa{
+    background-color: #FF5F00;
+}
+
+.bloco-1 .faixa div, .bloco-2 .faixa div{
+    max-width: 1250px;
+    display: flex;
+    margin: auto;
+    padding: 18px 30px;
+}
+
+.bloco-1 .faixa div h5, .bloco-2 .faixa div h5{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.bloco-1 .container{
+    padding: 30px;
+}
+
+.bloco-1 .container .box{
+    display: flex;
+    margin: auto;
+    max-width: 1250px;
+    padding: 15px;
+}
+
+.bloco-1 .container .box .card{
+    width: 350px;
+    margin: auto;
+    box-shadow: 0 5px 18px -8px;
+    border-radius: 30px;
+    padding: 0 30px 30px 30px;
+    margin: 0 15px;
+}
+
+.bloco-1 .container .box .card img{
+    margin: auto;
+    display: flex;
+    width: 55%;
+}
+
+.bloco-1 .container #box-2 .card div{
+    overflow-y:scroll;
+    height: 185px;
+}
+
+.bloco-1 .container #box-2 .card div::-webkit-scrollbar {
+    display: none;
+}
+
+.bloco-1 .container .box .card div h5{
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #162233;
+}
+
+.bloco-1 .container .box .card div p{
+    color: #162233;
+    margin-top: 7px;
+}
+
+.bloco-1 .container #box-2 .card:nth-child(1){
+    margin-left: auto;
+}
+
+.bloco-1 .container #box-2 .card:nth-child(2){
+    margin-right: auto;
+}
+
+.bloco-1 .container #box-2 .card button{
+    display: flex;
+    margin: 25px auto 0 auto;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(2, 1);
+    font-size: 18px;
+    background-color: transparent;
+    color: #00901D;
+    transition: 0.25s;
+}
+
+.bloco-1 .container #box-2 .card button:hover{
+    color: #00AE0C;
+}
+
+.bloco-1 .container #box-2 .card button.active{
+    transform: scale(2, 1) rotate(180deg);
+}
+
+.bloco-1 a{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    padding: 9px 20px;
+    background-color: #00F800;
+    color: #162233;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.bloco-1 a:hover{
+    background-color: #05e305;
+}
+
+/* medias */
+@media only screen and (max-width: 900px) {
+    .bloco-1 .container .box{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .bloco-1 .container .box .card{
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        margin: 0px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .bloco-1 .container .box .card img{
+        margin: auto;
+        display: flex;
+        width: 140px;
+    }
+    
+    .bloco-1 .container .box .card div{
+        margin: auto;
+    }
+
+    .bloco-1 .container #box-2 .card div{
+        height: auto;
+    }
+
+    .bloco-1 .container #box-2 .card button{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .bloco-1 .container .box{
+        padding: 0 15px;
+    }
+
+    .bloco-1 .container .box .card{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .bloco-1 .container #box-2 .card div{
+        height: 210px;
+    }
+
+    .bloco-1 .container #box-2 .card button{
+        display: block;
+    }
+}
+
+    /* BLOCO 2 */
+.bloco-2{
+    background-color: #f1f1f1;
+}
+
+.bloco-2 .container{
+    display: flex;
+    margin: auto;
+    max-width: 1270px;
+    padding: 30px;
+}
+
+.bloco-2 .container .card{
+    padding: 30px 20px 60px 20px;
+    box-shadow: 0 5px 15px -5px;
+    border-radius: 25px;
+    margin: 0 10px;
+    color: #162233;
+}
+
+.bloco-2 .container .card h5{
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 15px;
+    padding: 0 35px;
+}
+
+/* medias */
+@media only screen and (max-width: 1000px) {
+    .bloco-2 .container{
+        flex-direction: column;
+        padding: 15px 30px;
+    }
+
+    .bloco-2 .container .card{
+        padding: 15px 20px 15px 20px;
+        margin: 15px 0;
+        color: #162233;
+    }
+
+    .bloco-2 .container .card h5{
+        text-align: left;
+        padding: 0;
+    }
+}
+
+    /* BLOCO 3 */
+.bloco-3{
+    background-color: #DDE0E7;
+}
+
+.bloco-3 .container{
+    margin: auto;
+    max-width: 1250px;
+    padding: 15px 30px;
+}
+
+.bloco-3 .container h2{
+    font-size: 18px;
+    color: #162233;
+}
+
+.bloco-3 .container .grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-top: 10px;
+}
+
+.bloco-3 .container .grid .card, .bloco-3 .container .swiper .swiper-wrapper .card{
+    background-color: #F4EFF1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    border-radius: 35px;
+    box-shadow: 0 5px 15px -5px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.bloco-3 .container .grid .card img{
+    width: 90%;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.bloco-3 .container .grid .card:hover img{
+    transform: translateY(-10px) scale(1.1);
+}
+
+.bloco-3 .container .grid .card h3, .bloco-3 .container .swiper .swiper-wrapper .card h3{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #162233;
+    transition: 0.3s;
+}
+
+.bloco-3 .container .grid .card:hover h3{
+    transform: translateY(-5px) scale(1.25);
+}
+
+.bloco-3 .container .swiper{
+    display: none;
+}
+
+.bloco-3 .container .swiper .swiper-wrapper .card img{
+    width: 60%;
+    margin: auto;
+}
+
+.bloco-3 .container .swiper .swiper-button{
+    color: #00901D;
+    transition: 0.2s;
+}
+
+.bloco-3 .container .swiper .swiper-button::after{
+    display: none;
+}
+
+.bloco-3 .container .swiper .swiper-button-prev{
+    transform: translateX(5px) scale(1.5, 3) rotate(90deg);
+}
+
+.bloco-3 .container .swiper .swiper-button-next{
+    transform: translateX(-5px) scale(1.5, 3) rotate(270deg);
+}
+
+/* medias */
+@media only screen and (max-width: 1000px) {
+    .bloco-3 .container .grid{
+        display: none;
+    }
+
+    .bloco-3 .container .swiper{
+        display: block;
+    }
+}

@@ -1,0 +1,43 @@
+<header style="background-color: #162233; padding-bottom: 35px;">
+    <div>
+        <img src="imgs/logo-2.png" alt="Damax Soluções em Logística Reversa">
+        <ul>
+            <li><a style="color: #fff;" href="index.html">Home</a></li>
+            <li><a style="color: #fff;" href="quem-somos.html" id="quem-somos">Quem Somos</a></li>
+            <li><a style="color: #fff;" href="servicos.html" id="servicos">Serviços</a></li>
+            <li><a style="color: #fff;" href="" id="contato">Contato</a></li>
+        </ul>
+        <button onclick="toggleMenu()" style="color: #fff;">☰</button>
+    </div>
+</header>
+
+<div id="menu">
+    <div>
+        <img src="imgs/logo-1.png" alt="Damax Soluções em Logística Reversa">
+        <button onclick="toggleMenu()">𐌢</button>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <hr>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <hr>
+        <li><a href="servicos.html">Serviços</a></li>
+        <hr>
+        <li><a href="">Contato</a></li>
+    </ul>
+</div>
+
+<script>
+    var header = document.getElementById("header-2");
+    var quem_somos =  document.getElementById("quem-somos");
+    var servicos =  document.getElementById("servicos");
+    var contato =  document.getElementById("contato");
+
+    if(header.classList.contains("quem-somos")){
+        quem_somos.classList.add("active")
+    }else if(header.classList.contains("servicos")){
+        servicos.classList.add("active")
+    }else{
+        contato.classList.add("active")
+    }
+</script>

@@ -1,0 +1,65 @@
+footer{
+    background-color: #162233;
+    color: #fff;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 65px 30px;
+}
+
+footer .container .coluna h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+footer .container .coluna .contato{
+    display: flex;
+    margin: 5px 0;
+}
+
+footer .container .coluna .contato img{
+    width: 26px;
+    align-self: center;
+}
+
+footer .container .coluna .contato p{
+    padding-left: 6px;
+    font-size: 17px;
+}
+
+footer .container .coluna p{
+    font-size: 17px;
+}
+
+footer #copyright{
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+
+footer #copyright a{
+    text-decoration: none;
+    color: #00901D;
+    transition: 0.2s;
+}
+
+footer #copyright a:hover{
+    color: #F9BB1C;
+}
+
+/* medias */
+@media only screen and (max-width: 600px) {
+    footer .container{
+        grid-template-columns: 100%;
+        padding: 50px 30px;
+    }
+
+    footer .container #coluna-2{
+        margin-top: 30px;
+    }
+}

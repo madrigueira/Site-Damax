@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    border: 0;
+}
+
+body{
+    overflow-x: hidden !important;
+}
+
+    /*  HEADER  */
+header{
+    z-index: 11111;
+}
+
+header div{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    padding: 35px 30px 0 30px;
+}
+
+header div img{
+    width: 32%;
+    min-width: 180px;
+    animation: menu 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+    align-self: flex-end;
+}
+
+header div ul{
+    margin: auto;
+    margin-right: 0;
+    animation: menu 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+}
+
+header div ul li{
+    display: inline;
+}
+
+header div ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+header div ul li a:hover{
+    color: #00AE0C !important;
+}
+
+header div ul li a.active{
+    color: #00AE0C !important;
+}
+
+header div button{
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    font-size: 28px;
+    background-color: transparent;
+    transform: scale(1.5,1);
+    animation: menu-2 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+}
+
+#menu{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    transform: translateX(-100%);
+    transition: 0.7s;
+    background-color: #fff;
+    padding: 35px 30px 0 30px;
+}
+
+#menu.active{
+    transform: translateX(0);
+}
+
+#menu div{
+    display: flex;
+}
+
+#menu div img{
+    width: 32%;
+    min-width: 180px;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+#menu div button{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    font-size: 32px;
+    font-weight: 800;
+    background-color: transparent;
+    color: #111E30;
+}
+
+#menu ul{
+    margin-top: 50px;
+}
+
+#menu ul li{
+    display: flex;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #111E30;
+    font-weight: 700;
+}
+
+#menu ul hr{
+    background-color: #111e3030;
+    margin: 20px 0;
+    height: 1px;
+    width: 100%;
+}
+
+/*  Keyframes  */
+@keyframes menu {
+    0%{transform: translateY(-150px);}
+    100%{transform: translateY(0px);}
+}
+
+@keyframes menu-2 {
+    0%{transform: translateY(-150px) scale(1.5,1);}
+    100%{transform: translateY(0px) scale(1.5,1);}
+}
+
+/*  Medias  */
+@media only screen and (max-width: 800px) {
+    header div ul{display: none;}
+    header div button, #menu button{display: block;}
+}

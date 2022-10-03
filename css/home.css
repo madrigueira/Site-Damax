@@ -1,0 +1,278 @@
+
+    /* BLOCO 1 */
+.bloco-1{
+    background:linear-gradient(0deg, rgba(0, 255, 191, 0.3), rgba(240, 240, 240, 1)), url('../imgs/bg-1.png');
+    background-size: cover;
+    box-shadow: 0 20px 20px -20px;
+}
+
+.bloco-1 .container{
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.bloco-1 .container img{
+    width: 80%;
+    padding-top: 8%;
+    margin-left: -10%;
+    margin-bottom: -4%;
+}
+
+.bloco-1 .container div{
+    margin: auto;
+    transform: translateY(-25%);
+}
+
+.bloco-1 .container div p{
+    font-size: 18px;
+    color: #111E30;
+}
+
+.bloco-1 .container div a{
+    background-color: #00901D;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 9px 35px;
+    border-radius: 50px;
+    display: inline-flex;
+    margin-top: 25px;
+    transition: 0.2s;
+}
+
+.bloco-1 .container div a:hover{
+    background-color: #00AE0C;
+}
+
+/*  medias  */
+@media only screen and (max-width: 1500px) {
+    .bloco-1 .container img{
+        width: 60%;
+        margin-left: 0%;
+    }
+
+    .bloco-1 .container div{
+        transform: translateY(-5%);
+    }
+
+    .bloco-1 .container div a{
+        font-size: 18px;
+        padding: 9px 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bloco-1 .container{
+        display: block;
+    }
+
+    .bloco-1 .container img{
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .bloco-1 .container div p{
+        margin-top: 20px;
+    }
+
+    .bloco-1 .container div a{
+        margin-bottom: 20px;
+    }
+}
+
+    /* BLOCO 2 */
+.bloco-2{
+    max-width: 1290px;
+    margin: auto;
+    padding: 30px;
+}
+    
+.bloco-2 .swiper {
+    width: 100%;
+    height: 360px;
+    padding: 20px;
+}
+
+.bloco-1 .swiper .swiper-wrapper{
+    margin: 0 15px;
+}
+
+.bloco-2 .swiper .swiper-wrapper .swiper-slide{
+    box-shadow: 0 5px 18px -8px;
+    border-radius: 30px;
+    padding: 0px 30px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.bloco-2 .swiper .swiper-wrapper .swiper-slide:hover{
+    transform: scale(1.07);
+}
+
+.bloco-2 .swiper .swiper-wrapper .swiper-slide img{
+    margin: auto;
+    display: flex;
+    width: 50%;
+}
+
+.bloco-2 .swiper .swiper-wrapper .swiper-slide div h5{
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #162233;
+}
+
+.bloco-2 .swiper .swiper-wrapper .swiper-slide div p{
+    color: #162233;
+    margin-top: 7px;
+}
+
+.bloco-2 .swiper .swiper-button-next{
+    transform: translateX(-15px) scale(1.5, 3);
+    color: #00901D;
+    transition: 0.2s;
+}
+
+.bloco-2 .swiper .swiper-button-next:hover{
+    color: #00AE0C;
+}
+
+.bloco-2 .swiper .swiper-button-next::after{
+    display: none;
+}
+
+/*  medias  */
+@media only screen and (max-width: 600px) {
+    .bloco-2 .swiper .swiper-button-next{
+        transform: translateX(12px) scale(1.5, 3) rotate(270deg);
+    }
+}
+
+    /* BLOCO 3 */
+.bloco-3{
+    background-color: #162233;
+}
+
+.bloco-3 .container{
+    max-width: 1250px;
+    padding: 80px 30px;
+    display: flex;
+    margin: auto;
+}
+
+.bloco-3 .container img{
+    width: 30%;
+    align-self: center;
+}
+
+.bloco-3 .container div{
+    padding-left: 8%;
+}
+
+.bloco-3 .container div h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bloco-3 .container div p{
+    color: #fff;
+    font-size: 19px;
+    margin-top: 8px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.bloco-3 .container div a{
+    background-color: #FF6600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 110px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+.bloco-3 .container div a:hover{
+    background-color: #ff8400;
+}
+
+/* medias */
+@media only screen and (max-width: 850px) {
+    .bloco-3 .container{
+        padding: 30px
+    }
+
+    .bloco-3 .container img{
+        display: none;
+    }
+
+    .bloco-3 .container div{
+        padding-left: 0%;
+        margin-top: 15px;
+    }
+}
+
+    /* BLOCO 4 */
+.bloco-4{
+    background-image: url("../imgs/esteira.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 100vw;
+    animation: animate 75s linear infinite;
+}
+
+@keyframes animate{
+    0%{background-position-x: 0;}
+    100%{background-position-x: 100vw;}
+}
+
+.bloco-4 .container{
+    max-width: 1250px;
+    padding: 60px 30px;
+    display: flex;
+    margin: auto;
+}
+
+.bloco-4 .container h1{
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00901D;
+}
+
+.bloco-4 .container p{
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+/* medias */
+@media only screen and (max-width: 850px) {
+    .bloco-4 .container{
+        display: block;
+        padding: 30px;
+    }
+
+    .bloco-4 .container h1{
+        font-size: 36px;
+    }
+
+    .bloco-4 .container p{
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+}
