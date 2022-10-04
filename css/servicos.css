@@ -50,13 +50,18 @@
     width: 55%;
 }
 
-.bloco-1 .container #box-2 .card div{
-    overflow-y:scroll;
-    height: 185px;
+.bloco-1 .container .box .card div div{
+    height: 100px;
+    overflow: hidden;
+    transition: .5s;
 }
 
-.bloco-1 .container #box-2 .card div::-webkit-scrollbar {
-    display: none;
+.bloco-1 .container .box .card div:nth-child(1).active{
+    height: 260px;
+}
+
+.bloco-1 .container .box .card #card2.active{
+    height: 360px;
 }
 
 .bloco-1 .container .box .card div h5{
@@ -73,10 +78,12 @@
 
 .bloco-1 .container #box-2 .card:nth-child(1){
     margin-left: auto;
+    height: fit-content;
 }
 
 .bloco-1 .container #box-2 .card:nth-child(2){
     margin-right: auto;
+    height: fit-content;
 }
 
 .bloco-1 .container #box-2 .card button{
@@ -154,21 +161,8 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .bloco-1 .container .box{
-        padding: 0 15px;
-    }
-
     .bloco-1 .container .box .card{
         flex-direction: column;
-        margin-bottom: 30px;
-    }
-
-    .bloco-1 .container #box-2 .card div{
-        height: 210px;
-    }
-
-    .bloco-1 .container #box-2 .card button{
-        display: block;
     }
 }
 
@@ -185,11 +179,12 @@
 }
 
 .bloco-2 .container .card{
-    padding: 30px 20px 60px 20px;
+    padding: 30px 20px 45px 20px;
     box-shadow: 0 5px 15px -5px;
     border-radius: 25px;
     margin: 0 10px;
     color: #162233;
+    width: 100%;
 }
 
 .bloco-2 .container .card h5{
@@ -221,6 +216,7 @@
     /* BLOCO 3 */
 .bloco-3{
     background-color: #DDE0E7;
+    padding-bottom: 30px;
 }
 
 .bloco-3 .container{
@@ -308,5 +304,87 @@
 
     .bloco-3 .container .swiper{
         display: block;
+    }
+}
+
+    /* BLOCO 4 */
+.bloco-4{
+    background-image: url('../imgs/bg-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bloco-4 .container{
+    display: flex;
+    margin: auto;
+    max-width: 1250px;
+    padding: 30px;
+}
+
+.bloco-4 .container div{
+    margin: 0 15% 0 35%;
+    padding: 30px 0;
+}
+
+.bloco-4 .container div h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.bloco-4 .container div a{
+    background-color: #fff;
+    font-size: 56px;
+    color: #162233;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: #000 2px 5px 15px;
+    transition: 0.2s;
+}
+
+.bloco-4 .container div a:hover{
+    animation: animate 1s;
+    background-color: #e4e7dd;
+}
+
+.bloco-4 .container div a img{
+    filter: invert(47%) sepia(27%) saturate(3818%) hue-rotate(88deg) brightness(124%) contrast(119%);
+    width: 80px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+/* medias */
+@media only screen and (max-width: 1150px) {
+    .bloco-4{
+        background-image: linear-gradient(#008F1B, #111E30);
+    }
+
+    .bloco-4 .container div{
+        margin: 0;
+        padding: 30px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bloco-4 .container div h4{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .bloco-4 .container div a{
+        font-size: 30px;
+    }
+
+    .bloco-4 .container div a img{
+        width: 40px;
     }
 }

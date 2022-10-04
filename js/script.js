@@ -62,20 +62,17 @@ function toggleScroll(){
     btn.classList.toggle("active")
 }
 
-function toggleScroll_2(){
-    var card = document.getElementById('card-2')
-    var btn = document.getElementById('btn-scroll-2')
-    if(card.scrollTop == 0){
-        card.scroll({
-            top: 1000,
-            behavior: 'smooth'
-        })
-    }else{
-        card.scroll({
-            top: 0,
-            behavior: 'smooth'
-        })
-    }
+function toggleHeight(){
+    var card = document.getElementById('card')
+    var btn = document.getElementById('btn-height')
+    card.classList.toggle("active")
+    btn.classList.toggle("active")
+}
+
+function toggleHeight2(){
+    var card = document.getElementById('card2')
+    var btn = document.getElementById('btn-height2')
+    card.classList.toggle("active")
     btn.classList.toggle("active")
 }
 
