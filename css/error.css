@@ -1,0 +1,23 @@
+
+    /* BLOCO 1 */
+.bloco-1{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 90px;
+}
+
+.bloco-1 h4{
+    font-size: 205px;
+    font-weight: 400;
+    line-height: 200px;
+}
+
+.bloco-1 h5{
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.bloco-1 p{
+    font-size: 30px;
+    padding-top: 25px;
+}
