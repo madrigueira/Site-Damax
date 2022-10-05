@@ -137,7 +137,7 @@
 }
 
 .bloco-2 .swiper .swiper-button-next{
-    transform: translateX(-15px) scale(1.5, 3);
+    transform: translateX(-15px) scale(1.5, 3) rotate(270deg);
     color: #00901D;
     transition: 0.2s;
 }
