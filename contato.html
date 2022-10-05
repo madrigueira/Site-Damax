@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>Contato | Damax - Soluções em Logística Reversa</title>
 </head>
@@ -37,10 +37,27 @@
         </div>
     </div>
 
-    <div style="height: 500px"></div>
+    <!-- BLOCO 2 -->
+    <div class="bloco-2">
+        <div class="container">
+            <h5>Nos envie uma mensagem</h5>
+            <form action="https://formsubmit.co/contato@damaxsolucoes.com.br" method="POST">
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="tel" name="tel" placeholder="Telefone" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" cols="0" rows="3"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://damaxsolucoes.com.br/">
+                <button type="submit">Enviar</button>
+           </form>
+        </div>
+    </div>
 
 
-    
+    <footer>
+        <p id="copyright">Copyright 2022 © Damax Soluções em Logística Reversa. Todos os direitos reservados | Desenvolvido por <a href="https://www.coletivooito.com.br/" target="_blank">Coletivo 8</a></p>
+    </footer>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/jquery.js"></script>

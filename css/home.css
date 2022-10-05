@@ -160,6 +160,7 @@
     /* BLOCO 3 */
 .bloco-3{
     background-color: #162233;
+    overflow-x: hidden !important;
 }
 
 .bloco-3 .container{
