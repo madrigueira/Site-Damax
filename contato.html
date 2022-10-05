@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XD0Q7113ES"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-XD0Q7113ES');
+        </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +25,17 @@
 
     <!-- BLOCO 1 -->
     <div class="bloco-1">
-        <div class="mapa">
+        <div class="mapa" data-aos="fade-up" data-aos-delay="200">
             <h5>Onde estamos</h5>
             <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Rua%20do%20Triunfo,%20158,%20Santa%20Ifig%C3%AAnia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
-        <div class="contato">
+        <div class="contato" data-aos="fade-up" data-aos-delay="0">
             <h5>Nossos contatos</h5>
             <div class="container">
-                <a href=""><img src="imgs/ico-1.png">Empresa | (11) 3331-4654</a><br>
-                <a href=""><img src="imgs/ico-2.png">Daniel | (11) 97332-0941</a><br>
-                <a href=""><img src="imgs/ico-2.png">Wagner | (11) 99864-0456</a><br>
-                <a href=""><img src="imgs/ico-3.png">contato@damaxsolucoes.com.br</a>
+                <a href="https://api.whatsapp.com/send?phone=551133314654" target="_blank"><img src="imgs/ico-1.png">Empresa | (11) 3331-4654</a><br>
+                <a href="https://api.whatsapp.com/send?phone=5511973320941" target="_blank"><img src="imgs/ico-2.png">Daniel | (11) 97332-0941</a><br>
+                <a href="https://api.whatsapp.com/send?phone=5511998640456" target="_blank"><img src="imgs/ico-2.png">Wagner | (11) 99864-0456</a><br>
+                <a href="*"><img src="imgs/ico-3.png">contato@damaxsolucoes.com.br</a>
                 <p>
                     <span>Atendimento</span><br>
                     De segunda a sexta das 08:00 às 18:00<br><br>
@@ -38,7 +47,7 @@
     </div>
 
     <!-- BLOCO 2 -->
-    <div class="bloco-2">
+    <div class="bloco-2" data-aos="fade-up" data-aos-delay="400">
         <div class="container">
             <h5>Nos envie uma mensagem</h5>
             <form action="https://formsubmit.co/contato@damaxsolucoes.com.br" method="POST">
